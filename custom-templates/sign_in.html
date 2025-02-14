@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/61449322?v=4" type="image/png">
+    <title>Login to MLflow</title>
+    <style>
+        body {
+            font-family: "Google Sans",Roboto,Arial,sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            background-color: transparent;
+            color: #121418;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+
+            border: 1px solid #9091a8;
+            font-size: 0.875rem;
+            font-weight: 525;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to APP</h1>
+        <a class="button" href="{{ .ProxyPrefix }}/start?rd={{ .Redirect }}">
+            <img src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png" alt="Google Logo" style="height: 20px; vertical-align: middle; margin-right: 8px;">
+            Continue with Google
+        </a>
+    </div>
+</body>
+</html>
